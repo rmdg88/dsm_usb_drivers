@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# https://web.archive.org/web/20211027141018/http://www.jadahl.com/iperf-arp-scan/DSM_7.0/geminilake/
+# https://github.com/robertklep/dsm7-usb-serial-drivers/tree/main
 
 modprobe usbserial
 modprobe ftdi_sio
@@ -16,6 +16,8 @@ wget https://github.com/rmdg88/dsm_usb_drivers/raw/main/pl2303.ko
 insmod /lib/modules/pl2303.ko
 wget https://github.com/rmdg88/dsm_usb_drivers/raw/main/ti_usb_3410_5052.ko
 insmod /lib/modules/ti_usb_3410_5052.ko
+wget https://github.com/rmdg88/dsm_usb_drivers/raw/main/rndis_host.ko
+insmod /lib/modules/rndis_host.ko
 
 # Configure an autoload script
 
