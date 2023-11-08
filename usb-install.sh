@@ -17,7 +17,6 @@ insmod /lib/modules/pl2303.ko
 wget https://github.com/rmdg88/dsm_usb_drivers/raw/main/ti_usb_3410_5052.ko
 insmod /lib/modules/ti_usb_3410_5052.ko
 wget https://github.com/rmdg88/dsm_usb_drivers/raw/main/rndis_host.ko
-insmod /lib/modules/rndis_host.ko
 
 # Configure an autoload script
 
