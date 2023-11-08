@@ -22,9 +22,9 @@ insmod /lib/modules/rndis_host.ko
 # Configure an autoload script
 
 cd  /usr/local/etc/rc.d/
-wget https://github.com/rmdg88/dsm_usb_drivers/raw/main/usb-serial-drivers.sh
-chmod +x usb-serial-drivers.sh
+wget https://github.com/rmdg88/dsm_usb_drivers/raw/main/start-usb-drivers.sh
+chmod +x start-usb-drivers.sh
 
 # Make sure your devices are recongnized
 
-/usr/local/etc/rc.d/usb-serial-drivers.sh start
+/usr/local/etc/rc.d/start-usb-drivers.sh start
