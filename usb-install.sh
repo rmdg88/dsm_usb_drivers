@@ -1,14 +1,5 @@
 #!/bin/bash
 
-## (optional) not usb related
-# Check if /dev/net directory exists (needed for qt-wg)
-
-if [ ! -d "/dev/net" ]; then
-    echo "Creating directory /dev/net and tun"
-    mkdir -p /dev/net
-    mknod /dev/net/tun c 10 200
-fi
-
 ## usb related script
 # https://github.com/robertklep/dsm7-usb-serial-drivers/tree/main
 
