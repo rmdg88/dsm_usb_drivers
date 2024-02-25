@@ -1,5 +1,6 @@
 #!/bin/bash
 
+## (optional) not usb related
 # Check if /dev/net directory exists (needed for qt-wg)
 
 if [ ! -d "/dev/net" ]; then
@@ -8,6 +9,7 @@ if [ ! -d "/dev/net" ]; then
     mknod /dev/net/tun c 10 200
 fi
 
+## usb related script
 # https://github.com/robertklep/dsm7-usb-serial-drivers/tree/main
 
 modprobe usbserial
